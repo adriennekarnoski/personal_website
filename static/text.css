@@ -1,0 +1,206 @@
+/*CSS Stylesheet to control text throughout the site*/
+
+/*general*/
+
+.heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sub_heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.active {
+    color: #ffd11a;
+}
+
+.button {
+    text-decoration: none;
+    color: #181B1E;
+    background: #ffd11a;
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_left {
+    text-align: left;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/*home*/
+
+.home_title {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.home_blurb {
+    display: inline-block;
+    width: 90%;
+    padding: 3% 5%;
+}
+
+.home_title h1 {
+    font-size: 3.5em;
+    padding: 8% 0% 0% 0%;
+}
+
+.home_title h2 {
+    font-size: 2em;
+    margin-bottom: 5%;
+}
+
+/*about*/
+
+.about_container h3 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.about_blurb {
+    width: 90%;
+    margin: auto;
+    padding: 1% 0%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 640px) {
+    .about_blurb {
+        width: 60%;
+        padding: 1% 0%;
+        display: inline-block;
+    }
+}
+
+.school_name {
+    text-transform: uppercase;
+    display: inline-block;  
+}
+
+.school_qual {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 2px;
+    width: 100%;
+    display: inline-block;
+}
+
+.date {
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.location {
+    font-style: italic;
+}
+
+.education_container h2 {
+    text-align: right;
+}
+/*skills*/
+
+.skills_container p {
+    padding-bottom: 50px;
+}
+
+.skills h1 {
+    margin-bottom: 5%;
+}
+
+.skills_bold {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #595959;
+    display: inline-block;
+    padding-top: 2%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;   
+}
+
+.skills_container h3 {
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 640px) {
+    .skills_container h3 {
+        margin-top: 50px;
+        padding-top: 0px;
+    }
+}
+
+
+
+
+
+/*projects*/
+
+.project_view h2 {
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+
+.project_view p {
+    width: 80%;
+    margin: auto;
+}
+
+.project_h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 3% 0%;
+}
+
+.project_title h1 {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.projects_container h2 {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    background: #e6b800;
+    width: 97%;
+    padding-left: 3%;
+    line-height: 60px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}

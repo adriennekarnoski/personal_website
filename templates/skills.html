@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<section class="page skills">
+    <h1 class="heading">Skills and Experience</h1>
+
+    <button class="accordion clearfix" id="technical">
+        <span class="accordion_header left">Techincal Skills</span>
+        <span class="accordion_icon right">
+            <i class="fas fa-plus hidebutton"></i>
+            <i class="fas fa-minus showbutton"></i>
+        </span>
+    </button>
+    <div class="panel" id="technicalpanel">
+    <section class="skills_container clearfix">
+        <h2 class=sub_heading>Technical Skills</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="one">
+           <ul class="skills_list">
+            <li><span class="skills_bold">Languages</span></li>
+            <li>Python, Javascript, jQuery</li>
+            <li><span class="skills_bold">Development Environment</span></li>
+            <li>Jupyter Notebook, VirtualENV, Source Control, Git, GitHub</li>
+            <li><span class="skills_bold">Testing</span></li>
+            <li>Continuous Integration, Unit Testing, Integration Testing, Tox, Pytest</li>
+            <li><span class="skills_bold">Web Development</span></li>
+            <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+            <li><span class="skills_bold">Data:</span></li>
+            <li>PostgreSQL, SQLAlchemy, Django ORM, Data Analysis, Pandas, MatPlotLib</li>
+           </ul>
+        </article>
+    </section>
+   </div>
+
+<button class="accordion clearfix" id="strengths">
+        <span class="accordion_header left">Key Strengths</span>
+        <span class="accordion_icon right">
+            <i class="fas fa-plus showbutton"></i>
+            <i class="fas fa-minus hidebutton"></i>
+        </span>
+    </button>
+    <div class="panel" id="strengthspanel">
+         <section class="skills_container clearfix">
+        <h2 class=sub_heading>Key Strengths</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="two_even left blue">
+            <h3 class="title">Passion for Learning</h3>
+            <p class="text_center">Actively seek and explore new information and technological innovations</p>
+        </article>
+        <article class="two_even right blue">
+            <h3 class="title">Adaptability</h3>
+            <p class="text_center">Eficient and productive in fast-paced work environments</p>
+        </article>
+        <article class="two_even left blue">
+            <h3 class="title">Communication</h3>
+            <p class="text_center">Provide detailed written and oral techinical specifications and documentation</p>
+        </article>
+        <article class="two_even right blue">
+            <h3 class="title">Problem Solving</h3>
+            <p class="text_center">Ability to anatomize problems and consider various forms of resolution</p>
+        </article>
+        <!-- <article class="one">
+        <ul class="skills_list">
+
+            <li>Ability to anatomize information or situations, divide complex work processes into manageable tasks, and consider various forms of resolution</li>
+
+
+
+            <li>Actively seek and explore new information and technological innovations, as well as approaching challenges as opportunities to improve skills and abilities</li>
+
+            <li>Maintain positive and professional attitude while suggesting improvements and integrating constructive feedback from peers</li>
+</ul>
+
+        </article> -->
+
+    </section>
+    
+    </div>
+
+
+<button class="accordion clearfix" id="knowledge">
+        <span class="accordion_header left">Areas of Knowledge</span>
+        <span class="accordion_icon right">
+            <i class="fas fa-plus showbutton"></i>
+            <i class="fas fa-minus hidebutton"></i>
+        </span>
+    </button>
+<div class="panel" id="knowledgepanel"> 
+    <section class="skills_container clearfix">
+        <h2 class=sub_heading>Areas of Knowledge</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="two_even left blue">
+            <ul class="skills_list">
+                <li><i class="fas fa-check"></i>Object-Oriented Programming</li>
+                <li><i class="fas fa-check"></i>Test-driven Development</li>
+                <li><i class="fas fa-check"></i>RESTful APIs</li>
+            </ul>
+        </article>
+        <article class="two_even right blue">
+            <ul class="skills_list">
+                <li><i class="fas fa-check"></i>Data Structures and Algorithms</li>
+                <li><i class="fas fa-check"></i>Continuous Integration</li>
+                <li><i class="fas fa-check"></i>Software Design</li>
+            </ul>
+        </article>
+
+    </section>
+</div>
+
+<button class="accordion clearfix" id="flow">
+    <span class="accordion_header left">Military Background</span>
+    <span class="accordion_icon right">
+        <i class="fas fa-plus showbutton"></i>
+        <i class="fas fa-minus hidebutton"></i>
+    </span>
+</button>
+<div class="panel" id="flowpanel"> 
+    <section class="skills_container clearfix">
+        <h2 class=sub_heading>Military Background</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="one">
+            <ul>
+                <li><span class="school_qual">NEC 8452 - Advanced Radiographic Technician</span></li>
+                <li><span class="school_name">United States Navy</span> | <span class="location">NOVEMBER 2011 - NOVEMBER 2016</span></li>
+            </ul>
+            <ul class="skills_list military">
+            <li>Utilized various computer programs to prepare and analyze bi-weekly reports of routine, emergency,
+portable, and intra-operative exams for the Naval Hospital, with extreme
+attention to detail to track unread images for seven branch clinics</li>
+
+            <li>Collaborated in a team to stabilize and administer advanced first aid care to
+patients prior to emergency transport</li>
+            
+            <li>Exercised excellent written and verbal communication to consult and gather
+information with medical professionals</li>
+            
+            <li>Displayed interpersonal relations by anticipating patient’s needs and reactions on
+an individual basis.</li>
+            
+           
+            <li>PostgreSQL, SQLAlchemy, Django ORM, Data Analysis, Pandas, MatPlotLib</li>
+           </ul>  
+        </article>
+
+    </section>
+</div>
+</section>
+<footer class="gray clearfix">
+    
+
+</footer>
+{% endblock %}
