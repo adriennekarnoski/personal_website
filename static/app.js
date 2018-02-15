@@ -26,9 +26,18 @@ $(document).ready(function(){
         $(this).css("color", "#181b1e").find(".hidebutton").show()
         $("section.projects_container").hide()
         var filter = $(this).attr('id')
-        $(".projects" + filter).show()
-
-       
+        $(".projects" + filter).show()      
     });
     
+});
+
+$(document).ready(function(){
+    var path = $(location).attr('href');
+    var page = path.split('/').reverse()[0];
+    console.log(page)
+    if(page === "") {
+        $("#home").addClass("active")
+    } else {
+        $("#" + page).addClass("active")   
+    }
 });
