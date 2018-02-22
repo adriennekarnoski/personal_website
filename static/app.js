@@ -41,3 +41,14 @@ $(document).ready(function(){
         $("#" + page).addClass("active")   
     }
 });
+
+$(document).ready(function(){
+    $(".tab_links").on("click", "button", function() {
+        var get_id = $(this).attr('id')
+        var get_content = "." + get_id + "_content"
+        $(this).removeClass("inactive_tab").addClass("active_tab")
+        $(this).siblings().removeClass("active_tab").addClass("inactive_tab")
+        $(get_content).show()
+        $(get_content).siblings().hide()
+    });
+});

@@ -36,11 +36,13 @@ footer {
 }
 
 .two_small {
-    width: 30%;
+    width: 100%;
+    margin: auto;
 }
 
 .two_big {
-    width: 70%;
+    width: 100%;
+    margin: auto;
 }
 
 .three {

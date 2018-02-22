@@ -4,217 +4,208 @@
 
 {% block content %}
 <section class="page projects">
-    <h1 class="heading">Projects and Code Samples</h1>
-    <section class="side_tab">
-        <h2 class=sub_heading>Filter</h2>
-        <ul>
-            <li id="_container">Show All <span class="hidebutton"><i class="fas fa-angle-right"></i></span></li>
-            <li id="_sdk">SDK <span class="hidebutton"><i class="fas fa-angle-right"></i></span></li>
-            <li id="_web">Websites</li>
-            <li id="_data">Data</li>
-            <li id="_script">Scripts</li>
-        </ul>
-    </section>
+    <h1 class="heading">Portfolio</h1>
+    <article class="one text_center">
+        <p class="about_blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, a a a a a volutpat tincidunt tellus.</p>
+    </article>
+    <div class="tab_links clearfix">
+        <button id="project_tab" class="active_tab">Projects</button>
+        <button id="script_tab" class="inactive_tab">Scripts and Programs</button>
+    </div>
 
-    <section class="projects_container clearfix projects_sdk">
-        <h2 class="text_center">AvaTax Python SDK</h2>
-        <article class="two_small left">
-            <i class="fas fa-wrench fa-5x"></i>
-        </article>
-        <article class="two_big right">
-            <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li><a href="https://developer.avalara.com/?sessionId=1518548982606&referrer=&lastReferrer=developer.avalara.com">Avalara</a></li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Python, Requests, RESTful APIs, Travis CI</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Software Development Kit to interface with the Avalara AvaTax APIs.</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul class="inner_list">
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/avadev/AvaTax-REST-V2-Python-SDK" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+    <div class="tab_content">
+    <div class="project_tab_content">
+        <section class="projects_container clearfix">
+            <h2 class="text_left">AvaTax Python SDK</h2>
+            <article class="two_small left">
+                <ul class="skills_list">      
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Avalara</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Python, Requests, RESTful APIs, Travis CI</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/Python_Final" class="project_link">Github <i class="fas fa-angle-right"></i></a></li>
+                    <li><span class="skills_bold">View Live</span></li>
+                    <li><a href="https://github.com/avadev/AvaTax-REST-V2-Python-SDK" class="project_link">Avalara Developer Github <i class="fas fa-angle-right"></i></a></li>
+                </ul>
+               
+            </article>
+            <article class="two_big right">
+                <p>
+                    Python Software Development Kit for Avalara's tax service, AvaTax. Used for interfacing with the AvaTax REST v2 API, providing real-time tax calculations for financial applications.
+                </p>
+                <ul class="project_list indent">
+                    <li><i class="far fa-circle"></i> Worked closely with client to define functional requirements, determine performance characteristics, and establish release criteria.
+                    </li>
+                    <li><i class="far fa-circle"></i> Collaborated with team of developers using professional version-controlled workflow, regularly engaging in code review to maintain maximum efficiency.
+                    </li>
+                    <li> <i class="far fa-circle"></i> Provided detailed documentation for core concepts and individual features of application, improving overall usability.
+                    </li>
+                    <li> <i class="far fa-circle"></i>Successfully met deadline with  reusable, testable, and efficient code, achieving objectives and desired stretch goals.
+                    </li> 
+                </ul>
+            </article>
+        </section>
 
-    <section class="projects_container clearfix projects_data">
-        <h2 class="text_center">Data Structures</h2>
-        <article class="two_small left">
-            <i class="far fa-chart-bar fa-5x"></i>
-        </article>
-        <article class="two_big right">
-            <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li>Course Work, Code Challenges</li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Python, Javascript</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Continuous Integration, Unit Testing, Integration Testing, Tox, Pytest</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul>
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/adriennekarnoski/data-structures" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+        <section class="projects_container clearfix">
+            <h2 class="text_left">Pyramid Learning Journal</h2>
+            <article class="two_small left">
+                <ul class="skills_list">
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Curriculum Project</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Python, Pyramid, SQLAlchemy, Heroku, Jinja2, CSS, jQuery</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/pyramid-learning-journal" class="project_link">Github <i class="fas fa-angle-right"></i></a></li>
+                    <li><span class="skills_bold">View Live</span></li>
+                    <li><a href="https://macabre-caverns.herokuapp.com/" class="project_link">Learning Journal <i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </article>
+            <article class="two_big right">
+                <p>A journal application for documenting and reflecting on valueable information taken from Advanced Python Development course. Built with Pyramid, a Python framework, allowing for scaleabilty and storing entries in an SQL database.</p>
+                <ul class="project_list indent">
+                    <li><i class="far fa-circle"></i>Configured wsgi middleware to serve resources over HTTPS prior to deploying application on Heroku, protecting page authenticity and the privacy of exchanged data.
+                    </li>
+                    <li> <i class="far fa-circle"></i>Incorporated tox with Pyramid's testing module for unit and functional tests, verifying HTTP requests and responses, generated content, and MVC interaction.</li>
+                    <li><i class="far fa-circle"></i>Utilized SQLAlchemy's Object-Relational Mapper for SQL database manipulation and complex queries to retrieve and manipulate model instances.
+                    </li>
+                    <li> <i class="far fa-circle"></i>Provided CSRF protection and application security through authentication and authorization policies, CSRF token verification, and extracting all sensitive data from environmental variables.</li>
+                </ul>
+            </article>
+        </section>
 
-    <section class="projects_container clearfix projects_web">
-        <h2 class="text_center">Portfolio</h2>
-        <article class="two_small left">
-            <i class="far fa-address-card fa-5x"></i>
-        </article>
-        <article class="two_big right">
-            <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li>Personal Website</li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Python, Django, HTML, CSS, jQuery</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Personal Website</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul>
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/adriennekarnoski/symmetrical-potato" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+        <section class="projects_container clearfix">
+            <h2 class="text_left">Flask Portfolio</h2>
+            <article class="two_small left">
+                <ul class="skills_list">
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Personal Website</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Python, Flask, Heroku, Jinja2, jQuery, CSS</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/symmetrical-potato" class="project_link">Github <i class="fas fa-angle-right"></i></a></li>
+                    <li><span class="skills_bold">View Live </span></li>
+                    <li><a href="adriennekarnoski.com" class="project_link">adriennekarnoski.com<i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </article>
+            <article class="two_big right">
+                <p>A personal personal website for highlighting my projects and displaying various skills and technical knowledge.</p>
+                <p>Designed and built using Responsive Web design, the application allows users an ideal experience on both mobile and desktop.</p>
+                    <li> <i class="far fa-circle"></i>Deployed using Heroku</li>
+                    <li><i class="far fa-circle"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, a a a a a volutpat tincidunt tellus.
+                    </li>
+                    <li> <i class="far fa-circle"></i> Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</li> 
+                </ul>
+            </article>
+        </section>
 
-    <section class="projects_container clearfix projects_web">
-        <h2 class="text_center">Learning Journal</h2>
-        <article class="two_small left">
-            <i class="fas fa-pencil-alt fa-5x"></i>
-        </article>
-        <article class="two_big right">
-             <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li>Curriculum Project</li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Python, Pyramid, SQLAlchemy, HTML, CSS, jQuery</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Personal Website</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul>
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/adriennekarnoski/pyramid-learning-journal" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+        <section class="projects_container clearfix">
+            <h2 class="text_left">Space Rocks</h2>
+            <article class="two_small left">
+                <ul class="skills_list">
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Curriculum Project</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Python, Pyramid, Bokeh, SQLAlchemy, NASA APIs, Bootstrap</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/space-rocks" class="project_link">Github <i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </article>
+            <article class="two_big right">
+                <p>An informative application built with data collected from NASA APIs for Near Earth Objects, presenting plots and graphs using Bokeh for simple, informative data visualization.</p>
+                <ul class="project_list indent">
+                    <li><i class="far fa-circle"></i>
+                    Analyze complex data-sets returned by NASA API to identify errors or inconsistencies and extract relevant information prior to populating database.
+                    </li>
+                    <li> <i class="far fa-circle"></i>Adapted to challenges and obstacles during a time-sensitive period, collaborating with team to brainstorm and develop flexible solutions and combine creative ideas</li>
+                    <li><i class="far fa-circle"></i>Utilized Bokeh, a Python interactive visualization library, to display data to the user and encourage a deeper understanding of the information provided.
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </div>
 
-    <section class="projects_container clearfix projects_web">
-        <h2 class="text_center">Space Rocks</h2>
-        <article class="two_small left">
-            <i class="fas fa-rocket fa-5x"></i>
-        </article>
-        <article class="two_big right">
-            <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li>Curriculum Project</li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Python, Pyramid, Bokeh, SQLAlchemy, NASA APIs, Bootstrap</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Personal Website</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul>
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/adriennekarnoski/space-rocks" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+    <div class="script_tab_content">
+        <section class="projects_container clearfix">
+            <h2 class="text_left">Data Structures and Algorithms</h2>
+            <article class="two_small left">
+                <ul class="skills_list">
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Course Work, Code Challenges</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Python, Javascript, Tox, Jest, Travis CI, Coveralls</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/data-structures" class="project_link">Github <i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </article>
+            <article class="two_big right">
+                <p>A code library of data structures and algorthims commonly found in computer science and software development. The various modules within the Data Structures repository were applied to solve code challenges, analyzing code efficiency of different approaches and documenting Big O Notation</p>
+                <p>Built and tested in Python and Javascript, using Travis CI for continuous integration and Coveralls to track code covered in the test suite.</p>
+            </article>
+        </section>
 
-    <section class="projects_container clearfix projects_script">
-        <h2 class="text_center">Job Scraper</h2>
-        <article class="two_small left">
-            <i class="fas fa-globe fa-5x"></i>
-        </article>
-        <article class="two_big right">
-            <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li>Personal Project</li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Python, Django, HTML, CSS, jQuery</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Personal Website</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul>
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/adriennekarnoski/job_scraper" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+        <section class="projects_container clearfix">
+            <h2 class="text_left">Job Scraper</h2>
+            <article class="two_small left">
+                <ul class="skills_list">
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Personal Project</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Python, BeautifulSoup, Pandas, Numpy, Matplotlib</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/machine_learning" class="project_link">Github <i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </article>
+            <article class="two_big right">
+                <p>Python script that crawls and extracts data from the first ten pages of Stack Overflow jobs using Requests and BeautifulSoup, saving the gathered data in a CSV file.</p>
+                <p>After collecting data, the application allows the user to display different properties of the information on Matplotlib graphs.</p>
+            </article>
+        </section>
 
-    <section class="projects_container clearfix projects_data">
-        <h2 class="text_center">Jupyter Notebook</h2>
-        <article class="two_small left">
-            <i class="fas fa-cog fa-5x"></i>
-        </article>
-        <article class="two_big right">
-            <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li>Personal Project, </li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Jupyter Notebook, Python, Pandas, Numpy, Matplotlib</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Personal Website</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul>
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/adriennekarnoski/machine_learning" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+         <section class="projects_container clearfix">
+            <h2 class="text_left">Socket HTTP Server</h2>
+            <article class="two_small left">
+                <ul class="skills_list">
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Course Work</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Python, Socket, Gevent, Select, Tox</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/http-server" class="project_link">Github <i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </article>
+            <article class="two_big right">
+                <p>An HTTP server using Python sockets, supporting two-way communications between a client and a server. Utilizing a coroutine-based Python networking library, Gevent, the server applies concurrent programming techniques to improve usability and performance.</p>
+                <p>In addition to developing the socket server, the project aims to deepen the understanding of the internet protocol suite, TCP/IP. Exploring topics such as: functionality and specific protocols of abstraction layers, how data is transmitted, routed, and received, and the use of the client/server model of communication.
+            </article>
+        </section>
 
-    <section class="projects_container clearfix projects_script">
-        <h2 class="text_center">Brain Dump</h2>
-        <article class="two_small left">
-            <i class="fas fa-cog fa-5x"></i>
-        </article>
-        <article class="two_big right">
-            <ul class="skills_list">
-                <li><span class="skills_bold">Built For</span></li>
-                <li>Personal Project, </li>
-                <li><span class="skills_bold">Built With</span></li>
-                <li>Jupyter Notebook, Python, Pandas, Numpy, Matplotlib</li>
-                <li><span class="skills_bold">Description</span></li>
-                <li>Personal Website</li>
-                <li><span class="skills_bold">Some More shit</span></li>
-                    <ul>
-                        <li>More</li>
-                        <li>Shit</li>
-                        <li>Goes</li>
-                        <li>Here</li>
-                    </ul>
-            </ul>
-            <a href="https://github.com/adriennekarnoski/machine_learning" class="project_link">Github<i class="fas fa-angle-right"></i></a>
-        </article>
-    </section>
+        <section class="projects_container clearfix">
+            <h2 class="text_left">Jupyter Notebook
+                <a href="https://github.com/adriennekarnoski/machine_learning" class="project_link right">Github<i class="fas fa-angle-right"></i></a>
+            </h2>
+            <article class="two_small left">
+                <ul class="skills_list">
+                    <li><span class="skills_bold">Built For</span></li>
+                    <li>Personal Project</li>
+                    <li><span class="skills_bold">Built With</span></li>
+                    <li>Jupyter Notebook, Python, Pandas, Numpy, Matplotlib</li>
+                    <li><span class="skills_bold">View Code</span></li>
+                    <li><a href="https://github.com/adriennekarnoski/machine_learning" class="project_link">Github<i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </article>
+            <article class="two_big right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, a a a a a volutpat tincidunt tellus.</p>
+            </article>
+        </section>
+
+       
+    </div>
+</div>
+<footer class="gray clearfix">
+    
+
+</footer>
 </section>
         
 
