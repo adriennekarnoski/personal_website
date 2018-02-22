@@ -45,13 +45,13 @@
 
 .icon_container {
     margin: 3% 0%;
-    width: 100%;
+    width: 94%;
 }
 
 @media screen and (min-width: 640px) {
     .icon_container {
         margin: 3% auto;
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -83,6 +83,9 @@
     }
 }
 
+.experience {
+    padding-left: 5%;
+}
 /*skills*/
 
 .skills {
@@ -109,9 +112,10 @@
     width: 80%;
     margin: auto;
 }
+
 .skills_list {
     line-height: 1.5em;
-    margin: 5% 0% 5% 15%;
+    margin: 0% 0% 5% 15%;
     font-size: 18px;
 }
 

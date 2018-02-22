@@ -32,9 +32,13 @@
 .title {
     font-size: 0.8em;
     text-transform: uppercase;
-    color: white;
     text-align: center;
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.text_yellow {
+    color: #ffe066;
 }
 
 .text_center {
@@ -108,7 +112,7 @@ p {
 
 @media screen and (min-width: 640px) {
     .about_blurb {
-        width: 60%;
+        width: 70%;
         padding: 1% 0%;
         display: inline-block;
     }
@@ -132,6 +136,11 @@ p {
     letter-spacing: 1px;
     padding-bottom: 15px;
     color: white;
+}
+
+.date_work {
+    letter-spacing: 1px;
+    padding: 15px 0px;
 }
 
 .location {
@@ -171,9 +180,6 @@ p {
         padding-top: 0px;
     }
 }
-
-
-
 
 
 /*projects*/
