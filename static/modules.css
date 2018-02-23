@@ -83,9 +83,7 @@
     }
 }
 
-.experience {
-    padding-left: 5%;
-}
+
 /*skills*/
 
 .skills {
@@ -189,6 +187,10 @@
     margin-bottom: 5%;
 }
 
+.experience {
+    padding: 5%;
+}
+
 /*projects*/
 
 .tab_links {
@@ -271,68 +273,11 @@
 }
 
 .project_link {
-    /*display: inline-block;*/
-   /* margin: 0% 0% 0% 80%;*/
     text-decoration: none;
     font-size: 14px;
     font-weight: bolder;
     padding-right: 20px;
     text-transform: uppercase;
-   /* letter-spacing: 2px;*/
     color: black;
-    /*width: 150px;*/
 }
 
-/*.inner_list {
-    padding-left: 5%;
-}*/
-
-/*.project_link svg {
-    margin-left: 5%;
-    display: inline-block;
-}*/
-
-/*.side_tab {
-    display: none;
-}*/
-
-/*@media screen and (min-width: 640px) {*/
-    .side_tab {
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 100px;
-        width: 100%;
-        height: 100px;
-        background: rgba(89, 89, 89, 0.7);
-    }
-/*    .side_tab h2 {
-        text-align: center;
-        padding-top: 10%;
-    }*/
-
-/*    .side_tab ul {
-        padding: 0% 10% 10% 0%;
-    }*/
-
-    .side_tab li {
-      /*  padding: 10% 0% 10% 20%;*/
-        font-size: 0.9em;
-        font-weight: bold;
-        color: white;
-        display: inline-block;
-        text-transform: uppercase;
-        font-family: 'Josefin Sans', sans-serif;
-        letter-spacing: 2px;
-    }
-
-    .side_tab li:hover {
-        color: #181b1e;
-
-    }
-
-    .side_tab [data-icon="angle-right"] {
-    padding-right: 25px;
-    float: right;
-    }
-/*}*/
