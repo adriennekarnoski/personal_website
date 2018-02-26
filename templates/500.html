@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Page Not Found{% endblock %}
+{% block content %}
+<section class="page">
+<article class="one text_center">
+  <h1 class="error_heading">500</h1>
+  <h2 class="sub_heading">Sorry, something went wrong</h2>
+  <h2 class="sub_heading">Please try refreshing the page</h2>
+  <div class="skills_container">
+<a href="{{ url_for('home') }}" class="button">BACK TO HOME</a>
+</div>
+        
+</article>
+</section>
+  
+{% endblock %}
