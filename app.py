@@ -1,9 +1,7 @@
 from flask import Flask, render_template
-from healthcheck import HealthCheck, EnvironmentDump
+
 
 app = Flask(__name__)
-
-health = HealthCheck()
 
 
 @app.route('/')
@@ -34,9 +32,3 @@ def page_not_found(e):
 @app.errorhandler(500)
 def internal_server_error(e):
     return render_template('500.html'), 500
-
-app.add_url_rule(
-    "/healthcheck",
-    "healthcheck",
-    view_func=lambda: health.run())
-
