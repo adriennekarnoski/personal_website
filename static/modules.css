@@ -51,27 +51,6 @@
     }
 }
 
-.icon_container {
-    margin: 3% 0%;
-    width: 94%;
-}
-
-@media screen and (min-width: 640px) {
-    .icon_container {
-        margin: 3% auto;
-        width: 80%;
-    }
-}
-
-.icon_container article {
-    float: left;
-}
-
-.icon_container .fa-3x {
-    margin: 4% 0%;
-    color: #595959;
-}
-
 .education {
     width: 80%;
     padding: 5% 10%;
@@ -114,11 +93,6 @@
     }
 }
 
-.skills_container p {
-    width: 80%;
-    margin: auto;
-}
-
 .skills_list {
     line-height: 1.5em;
     padding: 5% 0%;
@@ -136,14 +110,32 @@
     }
 }
 
-.skills_container .svg-inline--fa {
-    color: #e6b800;
+.icon_container {
+    margin: 3% 0%;
+    width: 94%;
+}
+
+@media screen and (min-width: 640px) {
+    .icon_container {
+        margin: 3% auto;
+        width: 80%;
+    }
+}
+
+.icon_container section {
+    float: left;
+}
+
+.icon_container .fa-3x {
+    margin: 2% 0%;
+    color: #595959;
 }
 
 .fa-check {
     padding-right: 10px;
-
+    color: #e6b800;
 }
+
 .accordion {
     width: 100%;
     border: none;
