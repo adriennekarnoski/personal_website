@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+<section class="page about">
+  <h2>Contact</h2>
+<form method="POST" action="/">
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    {{ form.email.label }} {{ form.email(size=20) }}
+    {{ form.subject.label }} {{ form.subject(size=20) }}
+    {{ form.message.label }} {{ form.message(size=20) }}
+    <input type="submit" value="Go">
+</form>
+</section>
+{% endblock %}

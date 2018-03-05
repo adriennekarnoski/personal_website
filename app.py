@@ -1,7 +1,19 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from forms import ContactForm
+from flask_mail import Mail, Message
+import os
 
-
+mail = Mail()
 app = Flask(__name__)
+app.secret_key = os.environ.get('SECRET_KEY')
+
+app.config["MAIL_SERVER"] = "smtp.gmail.com"
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_SSL"] = True
+app.config["MAIL_USERNAME"] = os.environ.get('MAIL_USERNAME')
+app.config["MAIL_PASSWORD"] = os.environ.get('MAIL_PASSWORD')
+
+mail.init_app(app)
 
 
 @app.route('/')
@@ -22,6 +34,36 @@ def skills():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
+
+
+@app.route('/contact', methods=['GET', 'POST'])
+def submit():
+    form = ContactForm()
+    if request.method == 'POST':
+        if form.validate_on_submit():
+            msg = Message(
+                form.subject.data,
+                sender="from@example.com",
+                recipients=[os.environ.get('MAIL_USERNAME')])
+            msg.body = """
+            Name: {}
+            Email: {}
+
+
+            Message: {}
+
+            """.format(
+                form.name.data,
+                form.email.data,
+                form.message.data)
+            mail.send(msg)
+        return redirect('/contact/sent')
+    return render_template('contact.html', form=form)
+
+
+@app.route('/contact/sent')
+def sent():
+    return render_template('message_sent.html')
 
 
 @app.errorhandler(404)
