@@ -3,17 +3,63 @@
 
 {% block content %}
 <section class="page about">
-    <h1 class="heading">About Me</h1>
-
+    <h1 class="heading">About</h1>
         <section class="about_container clearfix">
             <article class="one text_center">
-                <h2 class="sub_heading">Who I am</h2>
-                <p class="about_blurb">Hello, I'm Adrienne Karnoski</p>
-                <p class="about_blurb">After five years as an Advanced Radiographic Technician I began my transition out of the Navy. While taking the opportunity to explore other interests I began taking an introductory web development course online. During the course, my initial interest in programming grew to something I was truly passionate about and I made the decision to make a career change.</p>
-                <p class="about_blurb">From books to online resources, I used everything I could get my hands on to build websites, implementing practices such as source control and responsive web design. Using the knowledge I had gained, I was accepted into Code Fellows, a Seattle-based, in-person coding academy, and relocated to Washington for the duration of my course.</p>
-                <p class="about_blurb">While at Code Fellows I built a strong foundation in website development, creating web applications using MVC architecture, and continued my learning through an Advanced Software Development Course, writing clean, well-tested, advanced Python code using industry-standard software engineering patterns.</p>                       
-            </article>
-            
+                <p class="sub_heading">Hello, I'm Adrienne Karnoski</p>
+                <p class="about_blurb">After five years as an Advanced Radiographic Technician, I took the opportunity to explore other interests during my transition out of the Navy. I discovered an online course on software development and quickly developed an appreciation for the challenge of solving problemsout that pushed me out of my comfort-zone. My initial interest in programming grew to something I was truly passionate about, so I made the decision to make a career change.</p>
+                <p class="about_blurb">From books to online resources, I used everything I could get my hands on to build websites: researching practices such as source control and responsive web design. Using the knowledge I had gained, I was accepted into Code Fellows, a Seattle-based, in-person coding academy, and relocated to Washington for the duration of my course.</p>
+                <p class="about_blurb">While at Code Fellows I was immersed in a hands-on learning experience. After builing a strong foundation in website development, I continued my learning through an intensive, advanced-level course, specializing in Python.</p>                       
+            </article>     
+        </section>
+
+        <section class="about_container clearfix blue">
+            <article class="workflow clearfix">
+                <section class="five left text_center">
+                    <i class="fas fa-desktop fa-3x"></i>
+                    <p class="title">Front-End</p>             
+                </section>
+                <section class="five left text_center">
+                    <i class="fas fa-code fa-3x"></i>
+                    <p class="title">Back-End</p>            
+                </section>
+                <section class="five left text_center">
+                   <i class="fas fa-sitemap fa-3x"></i>
+                   <p class="title">Frameworks</p>              
+                </section> 
+                <section class="five left text_center">
+                    <i class="fas fa-chart-bar fa-3x"></i>
+                    <p class="title">Data Analysis</p>             
+                </section>
+                <section class="five left text_center">
+                    <i class="far fa-check-circle fa-3x"></i>
+                    <p class="title">Testing</p>              
+                </section> 
+            </article>   
+        </section>
+
+        <section class="skills_container clearfix">
+            <h2 class="sub_heading text_center">Technical Skills</h2>
+            <article class="two_even left">
+            <ul class="skills_list">
+                <li><span class="skills_bold">Languages</span></li>
+                <li>Python, Javascript, HTML, CSS</li>
+                <li><span class="skills_bold">Libraries</span></li>
+                <li>Requests, BeautifulSoup, NumPy, SciPy, matplotlib, IPython, jQuery</li>
+                <li><span class="skills_bold">Web Development</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, </li>
+            </ul>
+        </article>
+        <article class="two_even right">
+            <ul class="skills_list">
+                <li><span class="skills_bold">Development Environment</span></li>
+                <li>Jupyter Notebook, VirtualENV, Continuous Integration, Git, GitHub</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Unit Testing, Integration Testing, Tox, Pytest</li>
+                <li><span class="skills_bold">Database</span></li>
+                <li>SQL, PostgreSQL, SQLAlchemy, Object-Relational Mapping</li>
+            </ul>
+        </article>      
         </section>
         
         <section class="about_container clearfix education yellow">
@@ -36,17 +82,19 @@
                 </ul>
             </article>
             <article class="two_even right">
-                <h2 class="sub_heading">Contact</h2>
+                <h2 class="sub_heading">Experience</h2>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i><span class="contact_span">Oceanside, CA</span></li>
-                    <li><i class="fas fa-mobile-alt fa-2x"></i><span class="contact_span">3607515707</span></li>
-                    <li><i class="far fa-envelope fa-2x"></i><span class="contact_span">adrienne.j.karnoski@gmail.com</span></li>
-                    <li><i class="fab fa-github fa-2x"></i><span class="contact_span">github.com/adriennekarnoski</span></li>
-                    <li><i class="fab fa-linkedin-in fa-2x"></i><span class="contact_span">linkedin.com/in/adrienne-karnoski</span></li>
-
-                </ul>
+                    <li class="date">NOVEMBER 2011 - NOVEMBER 2016</li>
+                    <li><span class="school_qual">Advanced Radiology Technician</span></li>
+                    <li><span class="school_name">United States Navy</span></li>
+                    <li class="space"><p>Radiographic Technician for a family medicine hospital with 7 branch clinics, annually performing 650,000 outpatient visits and 6,500 admissions. Conducting emergency, routine, portable, and intra-operative exams while contributing to personal and professional growth of Navy personnel.</p></li>
+                    <li class="space"><i class="far fa-circle"></i> Prepared and analyzed bi-weekly reports of routine, emergency, portable, and intra-operative exams for the Naval Hospital, with extreme attention to detail to track unread images for seven branch clinics.</li>
+                    <li class="space"><i class="far fa-circle"></i> Collaborated in a team to stabilize and administer advanced first aid care to patients prior to emergency transport.</li> 
+                    <li class="space"><i class="far fa-circle"></i> Exercised excellent written and verbal communication to consult and gather information with medical professionals.</li>
+                    <li class="space"><i class="far fa-circle"></i> Displayed interpersonal relations by anticipating patient’s needs and reactions on an individual basis.</li>   
+                </ul>    
             </article>
-    </section>
+        </section>
 </section>
 
 {% endblock %}

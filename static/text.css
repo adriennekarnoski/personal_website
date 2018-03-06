@@ -76,6 +76,9 @@ p {
     padding: 0% 1% 0.5% 0%;
 }
 
+.space {
+    padding: 2% 0%;
+}
 /*home*/
 
 .home_title {
@@ -262,8 +265,17 @@ p {
 }
 
 .projects_container p {
-    width: 80%;
+    width: 90%;
     text-align: justify;
     padding: 2% 0% 0% 0%;
     margin: auto;
+}
+
+@media screen and (min-width: 640px) {
+    .projects_container p {
+        width: 80%;
+        text-align: justify;
+        padding: 2% 0% 0% 0%;
+        margin: auto;
+    }
 }

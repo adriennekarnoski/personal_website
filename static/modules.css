@@ -3,7 +3,7 @@
 
 .home {
     background-image: url('background-mobile.jpg');
-        background-size: cover;
+    background-size: cover;
     height: 100vh;
 
 }
@@ -38,19 +38,6 @@
     }
 }
 
-.contact_span {
-    display: block;
-    padding: 5% 0% 10% 0%;
-    text-align: center;
-}
-
-@media screen and (min-width: 640px) {
-    .contact_span {
-        display: inline-block;
-        padding: 0% 0% 10% 0%;
-    }
-}
-
 .education {
     width: 80%;
     padding: 5% 10%;
@@ -70,14 +57,26 @@
     }
 }
 
+.workflow {
+    width: 80%;
+    margin: auto;
+    padding: 1% 0%;
+}
+
+@media screen and (min-width: 640px) {
+    .workflow {
+        width: 80%;
+        margin: auto;
+        padding: 3% 0%;
+    }
+}
+
+.workflow .fa-3x {
+    color: #e6b800;
+    padding: 5% 0%;
+}
 
 /*skills*/
-
-.skills {
-    background: #f2f2f2;
-    padding-top: 150px;
-    min-height: 100vh;
-}
 
 .skills_container {
     width: 90%;
@@ -110,91 +109,24 @@
     }
 }
 
-.icon_container {
-    margin: 3% 0%;
-    width: 94%;
-}
-
-@media screen and (min-width: 640px) {
-    .icon_container {
-        margin: 3% auto;
-        width: 80%;
-    }
-}
-
-.icon_container section {
-    float: left;
-}
-
-.icon_container .fa-3x {
-    margin: 2% 0%;
-    color: #595959;
-}
-
-.fa-check {
-    padding-right: 10px;
-    color: #e6b800;
-}
-
-.accordion {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #e6b800;
-}
-
-
-@media screen and (min-width: 640px) {
-    .accordion {
-        width: 80%;
-        margin: auto;
-        height: 50px;
-        display: block;
-        background: #e6b800;
-        color: black;
-        border: none;
-        outline: none;
-    }
-}
-
-.accordion_header {
-    font-size: 2em;
-    line-height: 2em;
-    padding: 0% 2%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.accordion_icon {
-    float: right;
-    font-size: 2em;
-    line-height: 2em;
-    padding: 0% 2%;
-}
-
-.active_panel, .accordion:hover {
-    background: #ffcc00;
-}
-
-.showbutton {
-    display: inline-block;
-}
-
-.hidebutton {
-    display: none;
-}
-
-.panel {
-    display: none;
-    margin-bottom: 5%;
-}
-
-.experience {
-    padding: 5%;
-}
 
 /*projects*/
+
+.project_img {
+    width:100%;
+    max-width:600px;
+    margin: 2% auto;
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .project_img {
+        width:100%;
+        max-width:600px;
+        margin: 2% auto;
+        display: block;
+    }
+}
 
 .tab_links {
     width: calc(80% + 20px);;
@@ -288,19 +220,6 @@
     font-size: 14px;
 }
 
- .projects_container .fa-5x {
-    display: none;
-}
-
-@media screen and (min-width: 640px) {
-    .projects_container .fa-5x {
-        display: block;
-        padding: 35% 0% 0% 15%;
-        float: right;
-        color: black;
-    }
-}
-
 .project_link {
     text-decoration: none;
     font-size: 14px;
@@ -308,5 +227,142 @@
     padding-right: 20px;
     text-transform: uppercase;
     color: black;
+}
+
+/*contact*/
+
+.contact {
+    background-image: url('foggy_mobile.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 20%;
+}
+
+@media screen and (min-width: 640px) {
+    .contact {
+        background-image: url('foggy.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+.contact_container {
+    width: 60%;
+    margin: 3% auto;
+    border-radius: 10px;
+    background: #e6b800;
+    padding: 2% 5%;
+}
+
+@media screen and (min-width: 640px) {
+    .contact_container {
+        width: 60%;
+        margin: auto;
+        margin-top: 3%;
+        border-radius: 10px;
+        background: #e6b800;
+        padding: 2% 5%;
+    }
+}
+
+.contact_span {
+    display: block;
+    padding: 5% 0% 10% 0%;
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    .contact_span {
+        display: inline-block;
+        padding: 0% 0% 10% 0%;
+    }
+}
+
+input[type=text], select, textarea {
+        width: 85%;
+        padding: 12px;
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        margin: 6px; 
+    }
+
+@media screen and (min-width: 640px) {
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        margin: 6px; 
+    }
+}
+
+.message_input {
+    height: 100px;
+}
+
+.contact_container form {
+    padding-top: 5%;
+}
+
+.contact_container ul {
+    padding-left: 5%;
+}
+
+@media screen and (min-width: 640px) {
+    .contact_container ul {
+        padding-left: 20%;
+    }
+}
+
+.contact_container ul h2 {
+    padding: 5% 0%;
+}
+
+.contact_container .fa-2x {
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+@media screen and (min-width: 640px) {
+    .contact_container .fa-2x {
+        display: inline-block;
+        width: 80px;
+        color: white;
+    }
+}
+
+input[type=submit] {
+    background-color: #181b1e;
+    color: white;
+    margin: 10px 6px;
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 640px) {
+    input[type=submit] {
+        background-color: #181b1e;
+        color: white;
+        margin: 10px 6px;
+        width: 100px;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.message_sent {
+    padding-top: 15%;
+}
+
+.message_sent .fa-4x {
+    color: white;
+    padding: 15% 0% 5% 0%;
 }
 
