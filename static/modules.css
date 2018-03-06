@@ -312,30 +312,55 @@
 
 
 .contact {
-    background-image: url('foggy.jpg');
-        background-size: cover;
-    height: 100vh;
+    background-image: url('foggy_mobile.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 20%;
+}
 
+@media screen and (min-width: 640px) {
+    .contact {
+        background-image: url('foggy.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
 }
 
 .contact_container {
     width: 60%;
-
-    margin: auto;
-    margin-top: 3%;
+    margin: 3% auto;
     border-radius: 10px;
     background: #e6b800;
     padding: 2% 5%;
 }
 
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    /*box-sizing: border-box;*/ /* Make sure that padding and width stays in place */
-    margin: 6px; /* Add a top margin */
+@media screen and (min-width: 640px) {
+    .contact_container {
+        width: 60%;
+        margin: auto;
+        margin-top: 3%;
+        border-radius: 10px;
+        background: #e6b800;
+        padding: 2% 5%;
+    }
+}
 
+input[type=text], select, textarea {
+        width: 85%;
+        padding: 12px;
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        margin: 6px; 
+    }
+
+@media screen and (min-width: 640px) {
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        margin: 6px; 
+    }
 }
 
 .message_input {
@@ -347,9 +372,14 @@ input[type=text], select, textarea {
 }
 
 .contact_container ul {
-    padding-left: 20%;
+    padding-left: 5%;
 }
 
+@media screen and (min-width: 640px) {
+    .contact_container ul {
+        padding-left: 20%;
+    }
+}
 .contact_container ul h2 {
     padding: 5% 0%;
 }
@@ -372,11 +402,25 @@ input[type=submit] {
     background-color: #181b1e;
     color: white;
     margin: 10px 6px;
-    width: 100px;
+    width: 95%;
     padding: 12px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+
+@media screen and (min-width: 640px) {
+    input[type=submit] {
+        background-color: #181b1e;
+        color: white;
+        margin: 10px 6px;
+        width: 100px;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 }
 
 .message_sent {
