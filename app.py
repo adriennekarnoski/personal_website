@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from forms import ContactForm
 from flask_mail import Mail, Message
 import os
@@ -12,6 +12,7 @@ app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = os.environ.get('MAIL_USERNAME')
 app.config["MAIL_PASSWORD"] = os.environ.get('MAIL_PASSWORD')
+
 
 mail.init_app(app)
 
@@ -37,13 +38,13 @@ def projects():
 
 
 @app.route('/contact', methods=['GET', 'POST'])
-def submit():
+def contact():
     form = ContactForm()
     if request.method == 'POST':
         if form.validate_on_submit():
             msg = Message(
-                form.subject.data,
-                sender="from@example.com",
+                request.form['subject'],
+                sender=os.environ.get('MAIL_SENDER'),
                 recipients=[os.environ.get('MAIL_USERNAME')])
             msg.body = """
             Name: {}
@@ -53,17 +54,12 @@ def submit():
             Message: {}
 
             """.format(
-                form.name.data,
-                form.email.data,
-                form.message.data)
+                request.form['name'],
+                request.form['email'],
+                request.form['message'])
             mail.send(msg)
-        return redirect('/contact/sent')
+            return render_template('contact.html', form=None)
     return render_template('contact.html', form=form)
-
-
-@app.route('/contact/sent')
-def sent():
-    return render_template('message_sent.html')
 
 
 @app.errorhandler(404)
