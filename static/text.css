@@ -208,6 +208,11 @@ p {
 
 /*projects*/
 
+.small_text {
+    font-size: 12px !important;
+    font-style: italic;
+}
+
 .project_view h2 {
     padding-top: 15px;
     letter-spacing: 2px;
